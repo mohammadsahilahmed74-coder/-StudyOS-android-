@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Center 54,54 safe region -->
+    <!-- Open Book Left Page -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M52,38 C44,35 34,35 28,38 L28,68 C34,65 44,65 52,68 Z" />
+    <!-- Open Book Right Page -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M56,38 C64,35 74,35 80,38 L80,68 C74,65 64,65 56,68 Z" />
+    <!-- Book Spine / Accent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M53.2,38 L54.8,38 L54.8,69 L53.2,69 Z" />
+    <!-- Rising Star / Spark of Knowledge -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M54,23 L55.6,28 L60.6,28.8 L56.8,32.2 L57.9,37 L54,34.5 L50.1,37 L51.2,32.2 L47.4,28.8 L52.4,28 Z" />
+    <!-- Progress Indicator Dots -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M38,74 A2,2 0 1,1 38,78 A2,2 0 1,1 38,74 Z" />
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M54,74 A2,2 0 1,1 54,78 A2,2 0 1,1 54,74 Z" />
+    <path
+        android:fillColor="#A78BFA"
+        android:pathData="M70,74 A2,2 0 1,1 70,78 A2,2 0 1,1 70,74 Z" />
+</vector>

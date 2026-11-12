@@ -1,0 +1,6 @@
+{
+  "name": "StudyOS",
+  "description": "Modern student productivity app featuring study task manager, subject and chapter tracking, timetable, notes, and exam countdown.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

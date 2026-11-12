@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StudyOS</string>
+    <string name="default_web_client_id" translatable="false">55637865040-s8cpaho870kqfnkg178eub0567ij2o92.apps.googleusercontent.com</string>
+    <string name="accessibility_service_description">Blocks distracting websites and domains during StudyOS deep focus sessions.</string>
+</resources>

@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "Task": {
+      "title": "Task",
+      "description": "A student study task or assignment",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The authenticated student ID" },
+        "title": { "type": "string", "description": "Task title" },
+        "description": { "type": "string", "description": "Detailed notes or task description" },
+        "isCompleted": { "type": "boolean", "description": "Completion status" },
+        "priority": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+        "estimatedMinutes": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "isCompleted"]
+    },
+    "LeaderboardEntry": {
+      "title": "LeaderboardEntry",
+      "description": "Weekly global student focus ranking entry",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "displayName": { "type": "string" },
+        "weekKey": { "type": "string" },
+        "totalFocusMinutes": { "type": "integer" },
+        "sessionsCompleted": { "type": "integer" },
+        "dailyStreak": { "type": "integer" },
+        "updatedAt": { "type": "integer" }
+      },
+      "required": ["userId", "displayName", "weekKey", "totalFocusMinutes"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/tasks/{taskId}": {
+      "schema": "Task",
+      "description": "User isolated study tasks"
+    },
+    "/leaderboard_weekly/{rankingId}": {
+      "schema": "LeaderboardEntry",
+      "description": "Global weekly focus leaderboard rankings"
+    }
+  }
+}
